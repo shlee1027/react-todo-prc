@@ -7,7 +7,7 @@ export default function AddTodo({ onAdd }) {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAdd();
+    onAdd({ id: "고유한값", text, status: "active" });
   };
 
   return (
